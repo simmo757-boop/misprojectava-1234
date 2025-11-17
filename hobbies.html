@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <a href="index.html" class="nav-logo">Ava Simmons</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                <li><a href="discover.html" class="nav-link">Discover UMD</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="career.html" class="nav-link">Career</a></li>
+                <li><a href="game.html" class="nav-link">Game</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hobbies Header -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="section-title">My Hobbies & Interests</h1>
+            <p>Welcome! Here’s a peek at what I get up to when I’m not working or studying—my hobbies, my way of having fun.
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Detailed Hobbies Section -->
+    <section class="section">
+        <div class="container">
+            <div class="hobby-grid">
+                <div class="card animate-in">
+                    <img src="media/IMG_7045.JPG" alt="Hobby 1" class="hobby-image">
+                    <div class="card-content">
+                        <h3>Hobby 1: Hiking </h3>
+                        <p>I started hiking during my senior year of high school. At first, it was just a way to get outside and clear my head, but I quickly started to love it. I love the feeling of pushing myself up a trail and then getting to just stop and look at the beautiful view. Over the years, I’ve done everything from easy walks to trails that totally killed me, and each one has its own memories, like beautiful sunsets or just laughing through a tough trail with my friends and family. Hiking’s definitely helped me grow too, teaching me patience, sticking with something even when it’s hard, and just enjoying being out in nature.
+
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card animate-in">
+                    <img src="media/IMG_0430.jpeg" alt="Hobby 2" class="hobby-image">
+                    <div class="card-content">
+                        <h3>Hobby 2: Wake Surfing</h3>
+                        <p>I got into wake surfing because one of my best friend made me try it, and honestly, I’m so glad she did. At first, I could barely stay on the board, but I ended up loving the feeling of gliding across the water, and feeling it splash against my face. It’s just so fun, keeps me moving, and I love being out there with friends, and listening to music while everyone does it. Over time, I’ve gotten better at staying up and even trying a few tricks…though that picture? Yep, that’s me totally biffing it.
+
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card animate-in">
+                    <img src="media/IMG_7737.jpeg" alt="Hobby 3" class="hobby-image">
+                    <div class="card-content">
+                        <h3>Hobby 3: Spending time with my family</h3>
+                        <p>Spending time with my family is hands-down my favorite hobby. I love just being with them, whether we’re going on little adventures, cooking together, or just laughing over random stories. It’s the time when I feel the most relaxed and myself, and it’s honestly the most important thing to me. These moments have taught me a lot about patience, understanding, and appreciating the little things in life, and no matter what else I’m doing, I always look forward to our time together.
+
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Stories Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Personal Stories & Experiences</h2>
+            <div class="card animate-in">
+                <div class="card-content">
+                    <h3>Memorable Moments</h3>
+
+            </div> My all time favorite memory was actually recently, for parents weekend 2025. My Mother, Step Dad, Brother, and even my dog came to visit me. We explored duluth, went up the north shore to Grand Marais and just explored all day, had great food, and ended the day with a hockey game. Granted we lost the hockey game but I had so much fun just being around my family, laughing at stupid jokes, and enjoying eachothers company. I look forward to parents weekend every year because of this. 
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Contact Information</h3>
+                    <p>Email: avasimmons1234@gmail.com<br>
+                    Phone: 612-391-6411</p>
+                    <p>Location: Duluth, MN</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover UMD</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="career.html">Career Interests</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Same animation script as index.html
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-in').forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(element);
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ava Simmons - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <a href="index.html" class="nav-logo">Ava Simmons</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                <li><a href="discover.html" class="nav-link">Discover UMD</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="career.html" class="nav-link">Career</a></li>
+                <li><a href="game.html" class="nav-link">Game</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-in">
+                <div class="profile-image-container">
+                    <img src="media/IMG_7351.jpeg" class="profile-image">
+                    <div class="hero-text">
+                        <h1 class="section-title">Hi, I'm Ava Simmons!</h1>
+                        <p>Student at University of Minnesota Duluth | Marketing Major</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card animate-in">
+                <div class="card-content">
+                    <h2>Professional Introduction</h2>
+                    <p>Hi, I'm Ava! I'm currently pursuing a degree in Marketing at the University of Minnesota Duluth and will be graduating in 2028. I'm passionate about exploring creative strategies, understanding consumer behavior, and helping brands tell their stories in impactful ways. This space is where I share my journey, projects, and insights as I grow into the world of marketing.
+
+Feel free to explore and connect. I'm excited to share my experiences and learn along the way!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Video Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Welcome Video</h2>
+            <div class="card animate-in">
+                <div class="video-container">
+                    <video controls playsinline preload="metadata">
+                        <source src="media/welcomevideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Preview -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">My Hobbies</h2>
+            <div class="hobby-grid">
+                <div class="card animate-in">
+                    <img src="media/IMG_6414.jpeg" alt="Hobby 1" class="hobby-image">
+                    <div class="card-content">
+                        <h3>Hobby 1: Hiking </h3>
+                        <p>Hiking is my favorite way to unwind, explore new places, and soak up nature, bonus points for beautiful
+                             views and a little adventure along the way!
+                    </div>
+                </div>
+                <div class="card animate-in">
+                    <img src="media/IMG_6959.jpeg" alt="Hobby 2" class="hobby-image">
+                    <div class="card-content">
+                        <h3>Hobby 2: Wake Surfing
+                        
+                        </h3>
+                        <p>I enjoy wake surfing because it’s a great way to challenge myself and stay active while spending time on the water. 
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Contact Information</h3>
+                </p>Email: avasimmons1234@gmail.com
+                    <p></P>Phone: 612-391-6411<p></p>
+                </p>Location: Duluth, MN</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="hobbies.html">My Hobbies</a></li>
+                        <li><a href="discover.html">Discover UMD</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="career.html">Career Interests</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add animation when elements come into view
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-in').forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(element);
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

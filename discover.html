@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover UMD - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <a href="index.html" class="nav-logo">Ava Simmons</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                <li><a href="discover.html" class="nav-link">Discover UMD</a></li>
+                <li><a href="resume.html" class="nav-link">Resume</a></li>
+                <li><a href="career.html" class="nav-link">Career</a></li>
+                <li><a href="game.html" class="nav-link">Game</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- UMD Header -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="section-title">Discover UMD</h1>
+            <p>Experience the beauty and opportunities at University of Minnesota Duluth</p>
+        </div>
+    </section>
+
+    <!-- Why UMD Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card animate-in">
+                <div class="card-content">
+                    <h2>Why I Chose UMD</h2>
+                    <p>There are a lot of reasons why I chose UMD, but the biggest one is definitely the location. I’m from Anoka, Minnesota, so it’s only about two and a half hours away, but close enough that I can make the drive in a day, but far enough that it really feels like I’m away at college. Plus, Duluth itself is just beautiful. I’ve always loved visiting here as a kid my grandpa used to bring us up on weekends so being able to live here now feels really special. It’s a place that’s full of good memories and nostalgia for me, which makes it feel like the perfect fit.
+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Duluth Area Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Life in Duluth</h2>
+            
+            <!-- Duluth Highlights Card -->
+            <div class="card animate-in" style="margin-bottom: 2rem;">
+                <div class="card-content">
+                    <h3>Favorite part of Duluth</h3>
+                    <p>My favorite thing about Duluth is how outdoorsy it is. There are hiking trails within walking distance of my house, and I feel so lucky to live in such a beautiful, well-kept area. Another huge perk is the surrounding places, the North Shore is stunning, and you can just hop in the car and end up somewhere amazing like Lutsen or Grand Marais. And of course, Lake Superior is incredible, it honestly never gets old.</p>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <h2 class="section-title">Duluth highlights pictures</h2>
+            <div class="photo-container animate-in">
+                <div class="photo-box">
+                    <img src="media/IMG_2573.jpeg" alt="Campus Photo 1">
+                </div>
+                <div class="photo-box">
+                    <img src="media/IMG_2773.jpeg" alt="Campus Photo 2">
+                </div>
+                <div class="photo-box">
+                    <img src="media/IMG_4599.jpeg" alt="Campus Photo 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UMD Marketing Video -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Experience UMD</h2>
+            <div class="card animate-in">
+                <div class="video-container">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-AFAeSnKMK4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"></iframe>
+                </div>
+                <div class="card-content">
+                    <h3>UMD Highlight Reel</h3>
+                    <p>Here's a short clip from campus — click play to watch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Highlights -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Campus Highlights</h2>
+            <div class="card animate-in">
+                <div class="card-content">
+                    <h3>My UMD Experience</h3>
+                    <p>Favorite Personal experience:</p>
+                    <ul>
+                        One of my favorite memories from my time here has to be freshman year during the Build-a-Bulldog event. I met so many new people that day, including my current roommates! We all still have our little bulldogs displayed in our house as a reminder of that fun day and how our friendship started.
+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Contact Information</h3>
+                    <p>Email: avasimmons1234@gmail.com</p>
+                    <p>Phone: 612-391-6411</p>
+                    <p>Location: Duluth, MN</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="discover.html">Discover UMD</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="game.html">Game</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animation script
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-in').forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(element);
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
